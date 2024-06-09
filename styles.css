@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 100vh; 
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    flex: 0 0 10vh;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.25rem;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left, rgb(0, 250, 0), rgb(0, 125, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title img {
+    margin-right: 10px;
+    width: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+main {
+    padding: 50px 100px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+main h2 {
+    font-size:1.75em;
+    margin-bottom: 20px;
+}
+
+main p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section {
+    text-align: center;
+    padding: 50px;
+    flex-grow: 1;
+}
+
+section > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section div.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-content img {
+    margin-bottom: 10px;
+}
+
+.skill-content span {
+    font-weight: bolder;
+    display: block;
+}
+
+section div.skill > img {
+    margin-bottom: 10px;
+}
+
+section div.skill > span {
+    font-weight: bolder;
+    display: block;
+}
+
+section div#mySkills > div:hover span {
+    color: gold;
+    text-decoration: underline;
+}
+
+footer {
+    flex: 0 0 10vh;
+    padding: 10px;
+    display: flex;
+    font-size:medium;
+    justify-content: center;
+    align-items: center;
+}

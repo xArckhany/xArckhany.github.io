@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004747;
+    color: aquamarine;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.25rem;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    color: azure;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.diaporama {
+    display: grid;
+    grid-template-areas: 
+        "cahier-des-charges competences"
+        "outils resultat";
+    grid-gap: 20px;
+}
+
+#cahier-des-charges {
+    grid-area: cahier-des-charges;
+    background-color: #002525; 
+    border: 2px solid #005050;
+}
+
+#competences {
+    grid-area: competences;
+    background-color: #007d7d;
+    border: 2px solid #00a6a6; 
+}
+
+#outils {
+    grid-area: outils;
+    background-color: #005656;
+    border: 2px solid #008080;
+}
+
+#resultat {
+    grid-area: resultat;
+    background-color: #00b3b3; 
+    border: 2px solid #00cccc;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
