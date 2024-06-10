@@ -21,55 +21,130 @@
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
+                <li><a href="#tools">Outils</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/xArckhany/xArckhany.github.io" id="infoIcon"><img
+                            src="./SVG/circle-info-solid.svg" height="30px" width="30px"></a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main id="about">
+        <img src="./SVG/circle-user-solid.svg" , height="100px" , width="100px">
         <h2>Bienvenue sur mon portfolio !</h2>
-        <p>Je suis François Debailleul, étudiant en Informatique. Ce portfolio présente mes compétences, projets et
-            réalisations. Passionné par la technologie, je suis en constante évolution pour devenir un professionnel
-            compétent. Explorez mes projets et n'hésitez pas à me contacter pour toute collaboration ou question. Merci
+        <p>Je suis François DEBAILLEUL, étudiant en BAC+3(BUT) Informatique. Ce portfolio présente mes projets en lien
+            avec mes
+            compétences d'informaticien.Passionné par la technologie, je suis en constante évolution pour devenir un
+            professionnel
+            compétent. Explorez mon site et n'hésitez pas à me contacter pour toute collaboration ou question. Merci
             de votre visite !</p>
     </main>
 
-    <section id="skills">
+    <section class="ContainerA" id="skills">
         <h2>Mes compétences</h2>
-        <div id="mySkills">
-            <div class="skill" id="HTML">
+        <div class="containerB">
+            <div class="containerC" id="HTML">
                 <a href="./html1_retex.html">
-                    <div class="skill-content">
+                    <div class="containerD">
                         <img src="./SVG/HTML5_logo.svg" alt="HTML5 Logo" width="50" height="50">
                         <span>HTML</span>
                     </div>
                 </a>
             </div>
-            <div class="skill" id="SQL">
+            <div class="containerC" id="SQL">
                 <a href="#">
-                    <div class="skill-content">
+                    <div class="containerD">
                         <img src="./SVG/Sql_logo.svg" alt="SQL Logo" width="50" height="50">
                         <span>SQL</span>
                     </div>
                 </a>
             </div>
-            <div class="skill" id="Java">
+            <div class="containerC" id="Java">
                 <a href="#">
-                    <div class="skill-content">
+                    <div class="containerD">
                         <img src="./SVG/Java_Logo.svg" alt="Java Logo" width="50" height="50">
                         <span>Java</span>
                     </div>
                 </a>
             </div>
-            <div class="skill" id="JavaScript">
+            <div class="containerC" id="JavaScript">
                 <a href="#">
-                    <div class="skill-content">
+                    <div class="containerD">
                         <img src="./SVG/javascript-logo.svg" alt="JavaScript Logo" width="50" height="50">
                         <span>JavaScript</span>
                     </div>
                 </a>
             </div>
+            <div class="containerC" id="Python">
+                <a href="#">
+                    <div class="containerD">
+                        <img src="./SVG/python-logo.svg" alt="Python Logo" width="50" height="50">
+                        <span>Python</span>
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
+    <section class="ContainerA" id="tools">
+        <h2>Mes Outils</h2>
+        <div class="containerB">
+            <div class="containerC" id="VSCode">
+                <div class="containerD">
+                    <img src="./SVG/visual-studio-code-logo.svg" alt="VSCode" width="50" height="50">
+                    <span>VSCode</span>
+                </div>
+            </div>
+            <div class="containerC" id="Apache Netbeans">
+                <div class="containerD">
+                    <img src="./SVG/Apache_NetBeans_Logo.svg" alt="Apache Netbeans" width="50" height="50">
+                    <span>Apache Netbeans</span>
+                </div>
+            </div>
+            <div class="containerC" id="Microsoft VS">
+                <div class="containerD">
+                    <img src="./SVG/microsoft-visual-studio-log.svg" alt="Microsoft VS" width="50" height="50">
+                    <span>Microsoft VS</span>
+                </div>
+            </div>
+            <div class="containerC" id="Win'Design">
+                <div class="containerD">
+                    <img src="./SVG/windesign-logo.svg" alt="Win'Design" width="50" height="50">
+                    <span>Win'Design</span>
+                </div>
+            </div>
+            <div class="containerC" id="Microsoft SQL Server Management Studio">
+                <div class="containerD">
+                    <img src="./SVG/microsoft-sql-server-logo.svg" alt="Microsoft SQL Server Management Studio"
+                        width="50" height="50">
+                    <span>Microsoft SSMM</span>
+                </div>
+            </div>
+            <div class="containerC" id="GitLab">
+                <div class="containerD">
+                    <img src="./SVG/gitlab-icon.svg" alt="GitLab Logo" width="50" height="50">
+                    <span>GitLab</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="subject">Objet :</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
 
     <footer>

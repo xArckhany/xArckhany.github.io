@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    min-height: 100vh; 
+    max-height: 100vh; 
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
@@ -22,6 +24,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Header styles */
 header {
     display: flex;
     flex: 0 0 10vh;
@@ -53,6 +56,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
@@ -66,17 +71,17 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
+/* Main styles */
 main {
     padding: 50px 100px;
-    min-height: 100vh;
     text-align: center;
 }
 
 main h2 {
-    font-size:1.75em;
+    font-size: 1.75em;
     margin-bottom: 20px;
 }
 
@@ -87,6 +92,7 @@ main p {
     border-radius: 10px;
 }
 
+/* Section styles */
 section {
     text-align: center;
     padding: 50px;
@@ -97,55 +103,102 @@ section > div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-radius: 16px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
-section div.skill {
+section div.containerC {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
-    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
     min-width: 100px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
-.skill-content {
+.containerD {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.skill-content img {
+.containerD img {
     margin-bottom: 10px;
 }
 
-.skill-content span {
+.containerD span {
     font-weight: bolder;
     display: block;
 }
 
-section div.skill > img {
+section div.containerC > img {
     margin-bottom: 10px;
 }
 
-section div.skill > span {
+section div.containerC > span {
     font-weight: bolder;
     display: block;
 }
 
-section div#mySkills > div:hover span {
+section div.containerB > div:hover span {
     color: gold;
     text-decoration: underline;
 }
 
+/* Contact section styles */
+#contact {
+    padding: 50px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form div {
+    margin-bottom: 20px;
+}
+
+#contact form label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact form textarea {
+    height: 150px;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
 footer {
     flex: 0 0 10vh;
     padding: 10px;
     display: flex;
-    font-size:medium;
+    font-size: medium;
     justify-content: center;
     align-items: center;
 }

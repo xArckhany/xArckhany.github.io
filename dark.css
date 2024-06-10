@@ -17,22 +17,42 @@ main p {
 
 section {
     color: azure;
-    background-color: rgb(28, 75, 75);
-}
-
-section > div {
     background-color: rgb(12, 49, 49);
 }
 
-.skill-content span {
+section div.containerC{
+    background-color: rgb(16, 86, 86);
+}
+
+.containerD span {
     color: azure;
 }
 
-section div.skill > span {
+section div.containerC>span {
     color: azure;
+}
+
+#contact {
+    background-color: rgb(0, 36, 36);
+    color: azure;
+}
+
+#contact form input,
+#contact form textarea {
+    font-size: 2em;
+    border: 1px solid aqua;
+}
+
+#contact form button {
+    background-color: #005656;
+    color: azure;
+}
+
+#contact form button:hover {
+    background-color: #004747;
 }
 
 footer {
-    background-color: rgb(0, 36, 36);
-    color: white;
+    background-color: rgb(0, 24, 24);
+    color: azure;
 }
