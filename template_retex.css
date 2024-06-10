@@ -5,6 +5,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    background-color:#00cccc;
+}
+
 header {
     display: flex;
     justify-content: center;
