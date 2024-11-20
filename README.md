@@ -13,6 +13,6 @@ https://xarckhany.github.io
 
   **/!\ Site web actuellement en cours de construction**
 
-### Portfolio
+## Portfolio
 
-Dans ce site vous retrouverez mon portfolio professionel.
+Dans ce site vous retrouverez mon portfolio professionel contenant une bref introduction de moi, les langages et outils informatique maîtrisés, ainsi que différents moyens de me contacter.
