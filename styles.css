@@ -23,13 +23,6 @@ a {
     color: inherit;
 }
 
-@media screen and (min-width: 768px) {
-    /* a:hover {
-        color: gold;
-        text-decoration: underline;
-    } */
-}
-
 /* Header styles */
 
 #title {
@@ -49,6 +42,7 @@ header {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -89,7 +83,7 @@ nav ul li a {
 }
 
 /* tablet size */
-@media screen and (max-width: 1038px) {
+@media screen and (max-width: 1058px) {
     header {
         flex-direction: column;
     }
@@ -121,6 +115,7 @@ nav ul li a {
     }
 
     #menu-burger:checked ~ ul {
+        width: 100%;
         display: flex;
         visibility: visible;
     }
@@ -169,7 +164,7 @@ main {
     align-items: center;
     padding: 50px;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 200px;
 }
 
 main h2 {
