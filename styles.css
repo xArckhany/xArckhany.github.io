@@ -70,6 +70,11 @@ nav ul li a {
     font-size: 1.5rem;
 }
 
+nav ul li a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
 /* table & pc size */
 @media screen and (min-width: 768px) {
     #menu-burger {
@@ -131,10 +136,7 @@ nav ul li a {
         width: 100%;
         text-align: center;
         height: 100%;
-    }
-
-    #menu-burger:checked ~ ul li:hover a {
-        color: gold;
+        text-decoration: none;
     }
 
     #menu-burger:checked ~ ul li:hover {
@@ -219,11 +221,13 @@ section div.containerC {
 
 .containerD img {
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .containerD span {
     font-weight: bolder;
     display: block;
+    width: 100%;
 }
 
 section div.containerC > img {
@@ -235,9 +239,16 @@ section div.containerC > span {
     display: block;
 }
 
-section div.containerB > div:hover span {
+.link {
+    border: 1px solid transparent;
+}
+
+.link:hover {
+    border: 1px solid gold;
+}
+
+.link:hover span {
     color: gold;
-    text-decoration: underline;
 }
 
 /* Contact section styles */
@@ -288,10 +299,20 @@ section div.containerB > div:hover span {
 
 /* Footer styles */
 footer {
-    flex: 0 0 10vh;
     padding: 10px;
     display: flex;
     font-size: medium;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction:row;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+footer ul li {
+    margin-left: 10px;
 }
